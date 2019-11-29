@@ -1,0 +1,17 @@
+{
+  "topics": [{
+    "topicName": "privat-soknadInnsendt-sendsoknad-v1-q0",
+    "numPartitions": 3,
+    "configEntries": {
+      "retention.ms": "-1"
+    },
+    "members": [{
+      "member": "soknadsmottaker",
+      "role": "PRODUCER"
+    },
+      {
+        "member": "soknadsarkiverer",
+        "role": "CONSUMER"
+      }]
+  }]
+}
