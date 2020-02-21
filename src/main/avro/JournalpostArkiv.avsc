@@ -1,38 +1,40 @@
 {
 	"namespace": "no.nav.soknad.soknadarkivering.avroschemas",
 	"type": "record",
-	"name": "soknadarkivschema",
-	"fields": [
-		{ "name": "behandlingsId", "type": "string"},
-		{ "name": "fodselsNummer", "type": "string"},
+	"name": "Soknadarkivschema",
+	"fields":
+	[
+		{ "name": "behandlingsid", "type": "string"},
+		{ "name": "fodselsnummer", "type": "string"},
 		{ "name": "arkivtema", "type": "string"},
 		{ "name": "henvendelsetype", "type": "string"},
 		{ "name": "henvendelseInnsendtDato", "type": "long"},
-		{ "name": "mottatteDokumenter", "type":
-			[ "null",
-				{ "type": "record",
-					"name": "mottatteDokumenter",
-					"fields": [
-						{ "name": "skjemaNummer", "type": "string"},
-						{ "name": "erHovedKjema", "type": "boolean"},
-						{ "name": "tittel", "type": "string"},
-						{ "name": "mottattVariant", "type":
-							[ "null",
-								{
-									"type": "record",
-									"name": "mottattVariant",
-									"fields": [
-										{"name": "uuid", "type": "string"},
-										{"name": "filNavn", "type": "string"},
-										{"name": "filtype", "type": "string"},
-										{"name": "variantformat", "type": "string"}
-									]
-								}
-							]
-						}
-					]
-				}
-			]
+		{ "name": "mottatteDokumenter", "type": {
+		    "type": "array",
+			"items": {
+			    "type": "record",
+                "name": "MottattDokument",
+                "fields": [
+                    { "name": "skjemanummer", "type": "string"},
+                    { "name": "erHovedskjema", "type": "boolean"},
+                    { "name": "tittel", "type": "string"},
+                    { "name": "mottatteVarianter", "type": {
+                        "type": "array",
+                        "items": {
+                            "type": "record",
+                            "name": "MottattVariant",
+                            "fields": [
+                                {"name": "uuid", "type": "string"},
+                                {"name": "filnavn", "type": "string"},
+                                {"name": "filtype", "type": "string"},
+                                {"name": "variantformat", "type": "string"}
+                            ]
+                        }
+                    }
+                    }
+                ]
+			}
+		}
 		}
 	]
 }
