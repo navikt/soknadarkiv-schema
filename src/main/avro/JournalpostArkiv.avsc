@@ -7,8 +7,8 @@
 		{ "name": "behandlingsid", "type": "string"},
 		{ "name": "fodselsnummer", "type": "string"},
 		{ "name": "arkivtema", "type": "string"},
-		{ "name": "henvendelsetype", "type": "string"},
-		{ "name": "henvendelseInnsendtDato", "type": "long"},
+		{ "name": "innsendtDato", "type": "long"},
+		{ "name": "soknadstype", "type": { "name": "Soknadstyper", "type": "enum", "symbols": ["SOKNAD", "ETTERSENDING"] }},
 		{ "name": "mottatteDokumenter", "type": {
 		    "type": "array",
 			"items": {
