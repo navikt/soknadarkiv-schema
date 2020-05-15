@@ -1,5 +1,5 @@
 {
-	"namespace": "no.nav.soknad.soknadarkivering.avroschemas",
+	"namespace": "no.nav.soknad.arkivering.avroschemas",
 	"type": "record",
 	"name": "Soknadarkivschema",
 	"fields":
