@@ -6,7 +6,7 @@ deserialiseres på kafkatopic mellom soknadsmottaker og soknadsarkiverer. Dokume
 
 Java-koden blir generert i `generate-sources`-fasen.
 
-Vid hver push til master så genereres automatisk en [ny pakke her](https://github.com/navikt/soknadarkiv-schema/packages/).
+Vid hver push til main så genereres automatisk en [ny pakke her](https://github.com/navikt/soknadarkiv-schema/packages/).
 
 
 ## Topic config
