@@ -1,7 +1,7 @@
 {
 	"topics": [
 		{
-			"topicName": "privat-soknadInnsendt-processingEventLog-v1-default",
+			"topicName": "privat-soknadInnsendt-messages-v1-default",
 			"members": [
 				{"member":"soknadsarkiverer", "role":"PRODUCER"},
 				{"member":"soknadsarkiverer", "role":"CONSUMER"},
@@ -16,7 +16,7 @@
 			}
 		},
 		{
-			"topicName": "privat-soknadInnsendt-processingEventLog-v1-q0",
+			"topicName": "privat-soknadInnsendt-messages-v1-q0",
 			"members": [
 				{"member":"soknadsarkiverer", "role":"PRODUCER"},
 				{"member":"soknadsarkiverer", "role":"CONSUMER"},
@@ -31,7 +31,7 @@
 			}
 		},
 		{
-			"topicName": "privat-soknadInnsendt-processingEventLog-v1-q1",
+			"topicName": "privat-soknadInnsendt-messages-v1-q1",
 			"members": [
 				{"member":"soknadsarkiverer", "role":"PRODUCER"},
 				{"member":"soknadsarkiverer", "role":"CONSUMER"},
@@ -46,7 +46,7 @@
 			}
 		},
 		{
-			"topicName": "privat-soknadInnsendt-processingEventLog-v1",
+			"topicName": "privat-soknadInnsendt-messages-v1",
 			"members": [
 				{"member":"soknadsarkiverer", "role":"PRODUCER"},
 				{"member":"soknadsarkiverer", "role":"CONSUMER"},
