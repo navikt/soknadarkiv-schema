@@ -3,8 +3,8 @@
 		{
 			"topicName": "privat-soknadInnsendt-processingEventLog-v1-default",
 			"members": [
-				{"member":"soknadsarkiverer", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"CONSUMER"},
+				{"member":"srvsoknadarkiverer", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
 				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
@@ -18,8 +18,8 @@
 		{
 			"topicName": "privat-soknadInnsendt-processingEventLog-v1-q0",
 			"members": [
-				{"member":"soknadsarkiverer", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"CONSUMER"},
+				{"member":"srvsoknadarkiverer", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
 				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
@@ -33,8 +33,8 @@
 		{
 			"topicName": "privat-soknadInnsendt-processingEventLog-v1-q1",
 			"members": [
-				{"member":"soknadsarkiverer", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"CONSUMER"},
+				{"member":"srvsoknadarkiverer", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
 				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
@@ -48,8 +48,8 @@
 		{
 			"topicName": "privat-soknadInnsendt-processingEventLog-v1",
 			"members": [
-				{"member":"soknadsarkiverer", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"CONSUMER"},
+				{"member":"srvsoknadarkiverer", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
 				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},

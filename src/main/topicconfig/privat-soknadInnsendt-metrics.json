@@ -3,10 +3,10 @@
 		{
 			"topicName": "privat-soknadInnsendt-metrics-v1-default",
 			"members": [
-				{"member":"soknadsmottaker", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"CONSUMER"},
-				{"member":"soknadsinnsending-systemtests", "role":"CONSUMER"},
+				{"member":"srvsoknadsmottaker", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
+				{"member":"srvinnsendingtests", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
 				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
@@ -20,10 +20,10 @@
 		{
 			"topicName": "privat-soknadInnsendt-metrics-v1-q0",
 			"members": [
-				{"member":"soknadsmottaker", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"CONSUMER"},
-				{"member":"soknadsinnsending-systemtests", "role":"CONSUMER"},
+				{"member":"srvsoknadsmottaker", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
+				{"member":"srvinnsendingtests", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
 				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
@@ -37,10 +37,10 @@
 		{
 			"topicName": "privat-soknadInnsendt-metrics-v1-q1",
 			"members": [
-				{"member":"soknadsmottaker", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"CONSUMER"},
-				{"member":"soknadsinnsending-systemtests", "role":"CONSUMER"},
+				{"member":"srvsoknadsmottaker", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
+				{"member":"srvinnsendingtests", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
 				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
@@ -54,9 +54,9 @@
 		{
 			"topicName": "privat-soknadInnsendt-metrics-v1",
 			"members": [
-				{"member":"soknadsmottaker", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"PRODUCER"},
-				{"member":"soknadsarkiverer", "role":"CONSUMER"},
+				{"member":"srvsoknadsmottaker", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"PRODUCER"},
+				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
 				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
