@@ -8,31 +8,11 @@
 		{ "name": "fodselsnummer", "type": "string"},
 		{ "name": "arkivtema", "type": "string"},
 		{ "name": "innsendtDato", "type": "long"},
-		{ "name": "soknadstype", "type": { "name": "Soknadstyper", "type": "enum", "symbols": ["SOKNAD", "ETTERSENDING"] }},
-		{ "name": "mottatteDokumenter", "type": {
+		{ "name": "soknadstype", "type": "Soknadstyper"},
+		{ "name": "mottatteDokumenter", "type":  {
 			"type": "array",
 			"items": {
-				"type": "record",
-				"name": "MottattDokument",
-				"fields": [
-					{ "name": "skjemanummer", "type": "string"},
-					{ "name": "erHovedskjema", "type": "boolean"},
-					{ "name": "tittel", "type": "string"},
-					{ "name": "mottatteVarianter", "type": {
-						"type": "array",
-						"items": {
-							"type": "record",
-							"name": "MottattVariant",
-							"fields": [
-								{"name": "uuid", "type": "string"},
-								{"name": "filnavn", "type": "string"},
-								{"name": "filtype", "type": "string"},
-								{"name": "variantformat", "type": "string"}
-							]
-						}
-					}
-					}
-				]
+				"name": "mottattDokument", "type": "MottattDokument"
 			}
 		}
 		}
