@@ -1,0 +1,10 @@
+{
+	"namespace": "no.nav.soknad.arkivering.avroschemas",
+	"type": "record",
+	"name": "ArchivingStateSchema",
+	"fields":
+	[
+		{ "name": "soknadarkivschema", "type": "Soknadarkivschema" },
+		{ "name": "state", "type": "EventTypes" }
+	]
+}
