@@ -1,12 +1,11 @@
 {
 	"topics": [
 		{
-			"topicName": "privat-soknadInnsendt-v1-default",
+			"topicName": "privat-soknadInnsendt-v1-teamsoknad",
 			"members": [
 				{"member":"srvsoknadsmottaker", "role":"PRODUCER"},
 				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
-				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
 				{"member":"H139079", "role":"MANAGER"}
 			],
@@ -21,7 +20,6 @@
 				{"member":"srvsoknadsmottaker", "role":"PRODUCER"},
 				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
-				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
 				{"member":"H139079", "role":"MANAGER"}
 			],
@@ -36,7 +34,6 @@
 				{"member":"srvsoknadsmottaker", "role":"PRODUCER"},
 				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
-				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
 				{"member":"H139079", "role":"MANAGER"}
 			],
@@ -51,7 +48,6 @@
 				{"member":"srvsoknadsmottaker", "role":"PRODUCER"},
 				{"member":"srvsoknadarkiverer", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
-				{"member":"K156027", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
 				{"member":"H139079", "role":"MANAGER"}
 			],
