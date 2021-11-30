@@ -1,12 +1,16 @@
 {
 	"topics": [
 		{
-			"topicName": "privat-soknadInnsendt-endToEndTests-entities",
+			"topicName": "privat-soknadInnsendt-systemTests-numberOfCalls",
 			"members": [
+				{"member":"srvarkivmock", "role":"PRODUCER"},
 				{"member":"srvinnsendingtests", "role":"PRODUCER"},
 				{"member":"srvinnsendingtests", "role":"CONSUMER"},
 				{"member":"S156301", "role":"MANAGER"},
 				{"member":"R156312", "role":"MANAGER"},
+				{"member":"K162480", "role":"MANAGER"},
+				{"member":"T162399", "role":"MANAGER"},
+				{"member":"P141319", "role":"MANAGER"},
 				{"member":"H139079", "role":"MANAGER"}
 			],
 			"numPartitions": 4,
