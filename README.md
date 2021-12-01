@@ -8,7 +8,7 @@ For a description of the whole archiving system, see [the documentation](https:/
 The Java code is being generated in the `generate-sources` phase of the Maven execution.
 
 ## Usage
-To use the generated Java classes, include the repo as a dependency using [JitPack](https://jitpack.io/#navikt/soknadarkiv-schema/89a9c7a).
+To use the generated Java classes, include the repo as a dependency using [JitPack](https://jitpack.io/#navikt/soknadarkiv-schema/89a9c7a). To use the latest schema definitions, use the sha of the latest commit as the dependency version.
 
 ## Topic config
 The directory `topicconfig/` contains the configuration files that were used to create the topics in [kafka-adminrest](https://kafka-adminrest.nais.preprod.local/api/v1/).
