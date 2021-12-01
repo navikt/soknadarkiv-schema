@@ -1,59 +1,20 @@
-[
-	{
-		"namespace": "no.nav.soknad.arkivering.avroschemas",
-		"name": "Soknadstyper", "type": "enum", "symbols": ["SOKNAD", "ETTERSENDING"]
-	},
-
-	{
-		"namespace": "no.nav.soknad.arkivering.avroschemas",
-		"type": "record",
-		"name": "MottattVariant",
-		"fields": [
-			{"name": "uuid", "type": "string"},
-			{"name": "filnavn", "type": "string"},
-			{"name": "filtype", "type": "string"},
-			{"name": "variantformat", "type": "string"}
-		]
-	},
-
-	{
-		"namespace": "no.nav.soknad.arkivering.avroschemas",
-		"type": "record",
-		"name": "MottattDokument",
-		"fields": [
-			{ "name": "skjemanummer", "type": "string"},
-			{ "name": "erHovedskjema", "type": "boolean"},
-			{ "name": "tittel", "type": "string"},
-			{ "name": "mottatteVarianter", "type": {
-				"type": "array",
-				"items": {
-					"name": "mottattVariant", "type": "MottattVariant"
-				}
-			}
-			}
-		]
-	},
-
-	{
-		"namespace": "no.nav.soknad.arkivering.avroschemas",
-		"type": "record",
-		"name": "InputTopicSoknadschema",
-		"fields":
+{
+	"namespace": "no.nav.soknad.arkivering.avroschemas",
+	"type": "record",
+	"name": "Soknadarkivschema",
+	"fields":
 	[
 		{ "name": "behandlingsid", "type": "string"},
 		{ "name": "fodselsnummer", "type": "string"},
 		{ "name": "arkivtema", "type": "string"},
 		{ "name": "innsendtDato", "type": "long"},
 		{ "name": "soknadstype", "type": "Soknadstyper"},
-		{ "name": "mottatteDokumenter", "type": {
+		{ "name": "mottatteDokumenter", "type":  {
 			"type": "array",
 			"items": {
 				"name": "mottattDokument", "type": "MottattDokument"
-				}
 			}
-			}
-		]
-	}
-
-]
-
+		}
+		}
+	]
+}

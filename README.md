@@ -1,20 +1,21 @@
 # Avro Schemas
-Denne modulen inneholder Avro-filer som beskriver hvordan meldingene serialiseres og deserialiseres på kafkatopic mellom soknadsmottaker og soknadsarkiverer. Dokumentasjon av [hele arkiveringssystemet](https://github.com/navikt/archiving-infrastructure/wiki).
+This repo contains Avro-files that define how the messages are serialized and deserialized on the Kafka topics.
 
-- Topic mellom soknadsmottaker og soknadsarkiverer benytter `src/main/avro/JournalpostArkiv.avsc`
+For a description of the whole archiving system, see [the documentation](https://github.com/navikt/archiving-infrastructure/wiki).
 
-Java-koden blir generert i `generate-sources`-fasen.
+- The topic used between [Soknadsmottaker](https://github.com/navikt/soknadsmottaker) and [Soknadsarkiverer](https://github.com/navikt/soknadsarkiverer) is using the schema definition in `src/main/avro/Soknadarkivschema.avsc`
 
-Vid hver push til main så genereres automatisk en [ny pakke her](https://github.com/navikt/soknadarkiv-schema/packages/).
+The Java code is being generated in the `generate-sources` phase of the Maven execution.
 
+## Usage
+To use the generated Java classes, include the repo as a dependency using [JitPack](https://jitpack.io/#navikt/soknadarkiv-schema/89a9c7a).
 
 ## Topic config
-`src/main/topicconfig/` inneholder konfigurasjonsfilene som ble brukt til å opprette topicene.
-Dersom man har behov for å gjenopprette topics så gjør man følgende:
-- Gå til swagger-siden for [kafka-adminrest](https://kafka-adminrest.nais.preprod.local/api/v1/)
-- Naviger til "oneshot"
-- Kopier json fra configfilen til ønsket topic
-- Paste json inn og trykk execute
-- Sjekk responskode/output
+The directory `topicconfig/` contains the configuration files that were used to create the topics in [kafka-adminrest](https://kafka-adminrest.nais.preprod.local/api/v1/).
 
-NB! Dersom man sletter og gjenoppretter topics må man huske å legge til riktige personer i KM gruppen.
+
+## Inquiries
+Questions regarding the code or the project can be asked to [team-soknad@nav.no](mailto:team-soknad@nav.no)
+
+### For NAV employees
+NAV employees can reach the team by Slack in the channel #teamsoknad
