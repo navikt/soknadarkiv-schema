@@ -1,0 +1,16 @@
+name: "Deploy Karapace"
+on:
+  push:
+    branches:
+    - "main"
+jobs:
+  deploy-dev:
+    name: "Deploy Karapace in DEV"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: "actions/checkout@v2"
+      - uses: nais/deploy/actions/deploy@v1
+        env:
+          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
+          CLUSTER: dev-gcp
+          RESOURCE: karapace-dev.yaml
