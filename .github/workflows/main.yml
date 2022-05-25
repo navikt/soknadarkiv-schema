@@ -13,4 +13,4 @@ jobs:
         env:
           APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
           CLUSTER: dev-gcp
-          RESOURCE: karapace-dev.yaml
+          RESOURCE: .nais/karapace-dev.yaml
