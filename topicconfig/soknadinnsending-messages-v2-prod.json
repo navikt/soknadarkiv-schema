@@ -17,6 +17,11 @@
         "application": "soknadsarkiverer",
         "team": "team-soknad",
         "access": "readwrite"
+      },
+      {
+        "application": "innsending-api",
+        "team": "team-soknad",
+        "access": "read"
       }
     ],
 	"pool": "nav-prod"
