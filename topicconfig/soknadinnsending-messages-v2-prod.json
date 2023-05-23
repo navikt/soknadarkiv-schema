@@ -22,7 +22,13 @@
         "application": "innsending-api",
         "team": "team-soknad",
         "access": "read"
+      },
+			      {
+        "application": "sendsoknad",
+        "team": "team-soknad",
+        "access": "read"
       }
+
     ],
 	"pool": "nav-prod"
   }
