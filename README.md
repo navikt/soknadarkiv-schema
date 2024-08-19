@@ -20,4 +20,4 @@ The directory `topicconfig/` contains the configuration files that were used to 
 Questions regarding the code or the project can be asked to [team-soknad@nav.no](mailto:team-soknad@nav.no)
 
 ### For NAV employees
-NAV employees can reach the team by Slack in the channel #teamsoknad
+NAV employees can reach the team by Slack in the channel #team-fyllut-sendinn
