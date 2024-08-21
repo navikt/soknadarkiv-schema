@@ -2,7 +2,7 @@
   "apiVersion": "kafka.nais.io/v1",
   "kind": "Topic",
   "metadata": {
-    "name": "soknadinnsending-arkiveringstilbakemeldinger-v1-dev",
+    "name": "privat-soknadinnsending-arkiveringstilbakemeldinger-v1-dev",
     "namespace": "team-soknad",
     "labels": {
       "team": "team-soknad"
