@@ -2,7 +2,7 @@
   "apiVersion": "kafka.nais.io/v1",
   "kind": "Topic",
   "metadata": {
-    "name": "privat-soknadinnsending-messages-v2",
+    "name": "privat-soknadinnsending-arkiveringstilbakemeldinger-v1-dev",
     "namespace": "team-soknad",
     "labels": {
       "team": "team-soknad"
@@ -24,6 +24,6 @@
         "access": "read"
       }
     ],
-	"pool": "nav-prod"
+	"pool": "nav-dev"
   }
 }
