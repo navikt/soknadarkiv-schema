@@ -12,7 +12,7 @@
 	<description>Avro Schema definitions</description>
 
 	<properties>
-		<avro.version>1.11.3</avro.version>
+		<avro.version>1.11.4</avro.version>
 		<java.version>17</java.version>
 
 		<maven.compiler.source>${java.version}</maven.compiler.source>
