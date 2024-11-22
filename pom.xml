@@ -54,4 +54,11 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<scm>
+		<connection>scm:git:https://github.com/navikt/soknadarkiv-schema.git</connection>
+		<developerConnection>scm:git:https://github.com/navikt/soknadarkiv-schema.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
 </project>
