@@ -5,7 +5,7 @@
 
 	<groupId>no.nav.soknad.arkivering</groupId>
 	<artifactId>avro-schemas</artifactId>
-	<version>1.4.0</version>
+	<version>1.4.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>soknadarkiv-schema</name>
