@@ -55,6 +55,13 @@
 		</plugins>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<id>github-dist</id>
+			<url>https://maven.pkg.github.com/navikt/soknadarkiv-schema</url>
+		</repository>
+	</distributionManagement>
+
 	<scm>
 		<connection>scm:git:https://github.com/navikt/soknadarkiv-schema.git</connection>
 		<developerConnection>scm:git:https://github.com/navikt/soknadarkiv-schema.git</developerConnection>
