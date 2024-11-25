@@ -1,4 +1,4 @@
-name: Manually triggered release
+name: Release (Github Package Registry)
 
 run-name: Manual ${{ github.event.inputs.environment }} release of ${{ github.head_ref || github.ref_name }}
 
@@ -7,35 +7,22 @@ permissions:
   id-token: "write"
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Version to deploy'
-        required: true
-        default: 'f52ace8dcc'
-        type: string
+  push:
+    branches:
+      - 'main'
 
 jobs:
-  publish-release:
+  build-and-release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout latest code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up JDK 21
+      - name: Set up JDK
         uses: actions/setup-java@v4
         with:
+          distribution: 'temurin'
           java-version: 21
-          distribution: temurin
-          cache: maven
-
-      - name: Setup build cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
+          cache: 'maven'
 
       - name: 'Create Maven settings file'
         # https://github.com/whelk-io/maven-settings-xml-action
@@ -52,8 +39,7 @@ jobs:
             { "id": "github-dist", "username": "${{ github.actor }}", "password": "${{ github.token }}" }
           ]'
 
-      - name: 'Perform release'
-        run: |
-          git config --local user.name 'GitHub Action[bot]'
-
-          mvn -B -Dresume=false release:clean release:prepare release:perform
+      - name: Run Maven release
+        run: ./release.sh
+        env:
+          GITHUB_TOKEN: $
