@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-				 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>no.nav.soknad.arkivering</groupId>
 	<artifactId>avro-schemas</artifactId>
-	<version>1.4.0</version>
+	<version>1.4.3-d43f74b77576</version>
 	<packaging>jar</packaging>
 
 	<name>soknadarkiv-schema</name>
 	<description>Avro Schema definitions</description>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>https://opensource.org/licenses/MIT</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<organization>NAV (Arbeids- og velferdsdirektoratet) - The Norwegian Labour and Welfare Administration</organization>
+			<organizationUrl>https://www.nav.no</organizationUrl>
+		</developer>
+	</developers>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/navikt/soknadarkiv-schema</url>
+		</repository>
+	</distributionManagement>
+	<scm>
+		<developerConnection>scm:git:git@github.com:navikt/soknadarkiv-schema.git</developerConnection>
+		<connection>scm:git:git@github.com:navikt/soknadarkiv-schema.git</connection>
+		<url>https://github.com/navikt/soknadarkiv-schema</url>
+		<tag>HEAD</tag>
+	</scm>
 
 	<properties>
 		<avro.version>1.11.4</avro.version>
@@ -52,6 +76,21 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.3.1</version>
+				<executions>
+					<execution>
+						<id>include-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
+
+
 </project>
