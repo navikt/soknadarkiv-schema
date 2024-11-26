@@ -34,6 +34,7 @@ jobs:
         # Oppretter default fil: ~/.m2/settings.xml
         uses: whelk-io/maven-settings-xml-action@v22
         with:
+          output_file: maven-settings.xml
           repositories: '[
             { "id": "central", "url": "https://repo1.maven.org/maven2/", "releases": { "enabled": "true" }, "snapshots": { "enabled": "false" } },
             { "id": "github", "url": "https://maven.pkg.github.com/navikt/maven-release", "releases": { "enabled": "true" }, "snapshots": { "enabled": "true" } },
