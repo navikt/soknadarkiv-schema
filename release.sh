@@ -22,4 +22,4 @@ mvn -B versions:set -DnewVersion="$VERSION"
 mvn -B versions:commit
 
 echo "Running release"
-mvn -B --settings /.m2/settings.xml deploy -Dmaven.wagon.http.pool=false
+mvn -B --settings maven-settings.xml deploy -Dmaven.wagon.http.pool=false
