@@ -35,9 +35,9 @@ jobs:
             { "id": "confluent", "url": "https://packages.confluent.io/maven/" }
           ]'
           servers: '[
-            { "id": "github", "username": "x-access-token", "password": "${{ secrets.READER_TOKEN }}" },
-            { "id": "github-dist", "username": "${{ github.actor }}", "password": "${{ github.token }}" }
+            { "id": "github", "username": "${{ github.actor }}", "password": "${{ github.token }}" }
           ]'
+          #  { "id": "github", "username": "x-access-token", "password": "${{ secrets.READER_TOKEN }}" },
 
       - name: Run Maven release
         run: ./release.sh
